@@ -34,6 +34,11 @@ export default function Javaprgmpage() {
     { id: "Qn16", title: "Nested Packages W6E!",fun:'ComponentP' },
     { id: "Qn17", title: "Exception handling W7a!",fun:'ComponentQ' },
     { id: "Qn18", title: "Throw Keyword W7b!",fun:'ComponentR' },
+    { id: "Qn19", title: "Stack using Collection W9a!",fun:'ComponentS' },
+    { id: "Qn20", title: "ArrayList using Collection W9b!",fun:'ComponentT' },
+    { id: "Qn21", title: "Byte Stream Class W10a!",fun:'ComponentU' },
+    { id: "Qn22", title: "File Class W10b!",fun:'ComponentV' },
+    { id: "Qn23", title: "Character Stream W10b!",fun:'ComponentW' },
   ];
 
   let javafilterList = javatitles.filter((item) => {
@@ -74,6 +79,11 @@ export default function Javaprgmpage() {
     ComponentN: <JavaContent javaactiveComponent={javaactiveComponent}/>,
     ComponentQ: <JavaContent javaactiveComponent={javaactiveComponent}/>,
     ComponentR: <JavaContent javaactiveComponent={javaactiveComponent}/>,
+    ComponentS: <JavaContent javaactiveComponent={javaactiveComponent}/>,
+    ComponentT: <JavaContent javaactiveComponent={javaactiveComponent}/>,
+    ComponentU: <JavaContent javaactiveComponent={javaactiveComponent}/>,
+    ComponentV: <JavaContent javaactiveComponent={javaactiveComponent}/>,
+    ComponentW: <JavaContent javaactiveComponent={javaactiveComponent}/>,
 
   };
 
