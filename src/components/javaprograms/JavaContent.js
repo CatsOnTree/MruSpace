@@ -606,6 +606,193 @@ Please enter first number(numerator): 12
 Please enter second number(denominator): 6
 Division result of 12/6=2.0` ,
 heading:`Write a Java program that uses throws keyword in method declaration which will instruct the compiler to handle exception using try-catch block.`
+},
+collectionStack:{
+    code: `import java.util.*;
+    public class StackDemo {
+        static void showpush(Stack st,int a){
+            st.push(new Integer(a));
+            System.out.println("push("+a+")");
+            System.out.println("stack:"+st);
+        }
+    
+        static void showpop(Stack st) {
+            System.out.println("Pop =>");
+            Integer a = (Integer) st.pop();
+            System.out.println(a);
+            System.out.println("Stack : "+st);
+        }
+        public static void main(String[] args) {
+            Stack st = new Stack();
+            System.out.println("stack : "+st);
+            showpush(st,42);
+            showpush(st,66);
+            showpush(st,99);
+            showpop(st);
+            showpop(st);
+            showpop(st);
+            
+        }
+    }`,
+    output:`stack : []
+push(42)
+stack:[42]push(66)
+stack:[42, 66]
+push(99)
+stack:[42, 66, 99]
+Pop =>
+99
+Stack : [42, 66]
+Pop =>
+66
+Stack : [42]
+Pop =>42
+Stack : []`,
+    heading:`Implement stack program using java collection.`
+},
+
+collectionArrayList:{
+code:`import java.util.*;
+public class Collection {
+    public static void main(String[] args) {
+        ArrayList list_1 = new ArrayList<>();
+        ArrayList<String> list_2 = new ArrayList<String>();
+        list_1.add(10);
+        list_1.add(20);
+        list_2.add("Btech");
+        list_2.add("Smart");
+        list_2.add("class");
+        list_1.addAll(list_2);
+        System.out.println("Elements of list_1 :"+list_1);
+        System.out.println("search for Btech :"+list_1.contains("Btech"));
+        System.out.println("serach for list_2 in list_1 :"+list_1.contains(list_2));
+        System.out.println("check whether list1 and list2 are equal : "+list_1.equals(list_2));
+        System.out.println("check the list_1 empty : "+list_1.isEmpty());
+        System.out.println("size of list_1 :"+list_1.size());
+        System.out.println("Hashcode of list_1 :"+list_1.hashCode());
+        list_1.remove(0);
+        System.out.println(list_1);
+        list_1.retainAll(list_2);
+        System.out.println(list_1);
+        list_1.removeAll(list_2);
+        System.out.println(list_1);
+        list_2.clear();
+        System.out.println(list_2);
+    }
+}`,
+output:`Elements of list_1 :[10, 20, Btech, Smart, class]
+search for Btech :true
+serach for list_2 in list_1 :false
+check whether list1 and list2 are equal : false
+check the list_1 empty : falsesize of list_1 :5
+Hashcode of list_1 :181129180
+[20, Btech, Smart, class]
+[Btech, Smart, class]
+[]
+[]`,
+heading:`Implement ArrayList program using Collection Class`
+},
+ByteStreamDemo:{
+    code:`import java.io.*;
+    import java.util.*;
+    public class ByteStreamDemo {
+        public static void main(String[] args) throws Exception{
+            String str,str1;
+            Scanner in = new Scanner(System.in);
+            System.out.println("Enter the filename to read the data :");
+            str = in.next();
+            System.out.println("Enter the filename to write the data :");
+            str1 = in.next();
+            FileInputStream fis = new FileInputStream(str);
+            FileOutputStream fos = new FileOutputStream(str1);
+            try{
+                int x;
+                while ((x=fis.read())!=-1)
+                    fos.write(x);
+                System.out.println("Data written into file...!");
+                
+            }
+            catch(Exception e){
+                System.out.println(e);
+            }
+            finally{
+                fis.close();
+                fos.close();
+            }
+    
+        }
+    }`,
+    output:`Enter the filename to read the data
+ByteStreamDemo.java
+Enter the filename to write the data
+bytestream.txt
+Data is written into file`,
+    heading:`Write a program using byteStream`
+},
+FileDemo:{
+    code:`import java.util.*;
+    import java.io.*;
+    public class FileDemo {
+        public static void main(String[] args) {
+            String s =args[0];
+            File f=new File(s);
+            if(f.exists()){
+                System.out.println("File Exists ");
+                System.out.println("File name: "+f.getName());
+                System.out.println("path : "+f.getPath());
+                System.out.println("Absolute path : "+f.getAbsolutePath());
+                System.out.println("File is readable : "+f.canRead());
+                System.out.println("File is writeable : "+f.canWrite());
+                System.out.println("File length :"+f.length());
+            }
+            else{
+                System.out.println("file doesnot exsist");
+            }
+        }
+    }`,
+    output:`File Exists
+Filename:filedemo.txt
+path:filedemo.txt
+Absolute path:D:Apha49filedemo.txt
+File is readable:true
+File is writeable:true
+File length:36`,
+    heading:`write a program using File class`
+},
+CharacterStreamDemo:{
+    code:`import java.io.*;
+    import java.util.*;
+    public class CharacterStreamDemo {
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            String strread,strwrite;
+            System.out.println("Enter the filename to read :");
+            strread = in.next();
+            System.out.println("Enter the filename to write :");
+            strwrite = in.next();
+            FileReader fr = new FileReader(strread);
+            FileWriter fw = new FileWriter(strwrite);
+            try{
+                int x;
+                while ((x=fr.read()!=-1))
+                    fw.write(x);
+                System.out.println("data written into file..!!");
+            }                
+            catch(Exception e){
+                System.out.println(e);
+            }
+            finally{
+                fr.close();
+                fw.close();
+            }
+        }
+    }`,
+    output:`Enter the filename to read the data
+characterStreamDemo.java
+Enter the filename to write the data
+CDS.txt
+Data is written into file`,
+    heading:`Write a program using CharacterStream Class`
 }
 
 
@@ -630,6 +817,11 @@ heading:`Write a Java program that uses throws keyword in method declaration whi
     {javaactiveComponent === "ComponentN" && <JavaComponent propsContent={JavaContentObj.defaultmethods}/>}
     {javaactiveComponent === "ComponentQ" && <JavaComponent propsContent={JavaContentObj.excepttest}/>}
     {javaactiveComponent === "ComponentR" && <JavaComponent propsContent={JavaContentObj.throwkey}/>}
+    {javaactiveComponent === "ComponentS" && <JavaComponent propsContent={JavaContentObj.collectionStack}/>}
+    {javaactiveComponent === "ComponentT" && <JavaComponent propsContent={JavaContentObj.collectionArrayList}/>}
+    {javaactiveComponent === "ComponentU" && <JavaComponent propsContent={JavaContentObj.ByteStreamDemo}/>}
+    {javaactiveComponent === "ComponentV" && <JavaComponent propsContent={JavaContentObj.FileDemo}/>}
+    {javaactiveComponent === "ComponentW" && <JavaComponent propsContent={JavaContentObj.CharacterStreamDemo}/>}
     </div>
   )
 }
