@@ -1,0 +1,127 @@
+nav{
+    width: 100vw;
+    height: 10vh;
+    /* background-color: #1C1C1C; */
+    color:  #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    position: fixed;
+    z-index: 5;
+}
+#nav_1{
+    width: 95vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul li{
+    padding: 10px 25px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+ul li:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+.toolsclass{
+    cursor: pointer;  
+}
+.toolsclass:hover{
+    color: var(--orange);
+}
+#logo {
+  width: 30px;
+  height: 30px;
+}
+#down_logo{
+    width: 15px;
+    height: 15px;
+}
+#search_logo{
+    width: 23px;
+    height: 23px;
+    display: none;
+}
+#profile_logo{
+    width: 24px;
+    height: 23px;
+    display: none;
+}
+#abtlink{
+    text-decoration: none;
+    color: var(--white);
+}
+#abtlink:hover{
+    color: var(--orange);
+}
+.aligncenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    align-items: center;
+    display: flex;
+}
+
+
+  
+@media only screen and (max-width: 700px){
+    /* .upldclassmobile{
+        padding-left: 10px;
+    } */
+    /* .abtclassmobile{
+        display: none;
+    } */
+    .ul-li-hlist{
+        display: none;
+    }
+
+    .toolsclass:hover{
+        color: var(--white);
+    }
+    #abtlink:hover{
+        color: var(--white);
+    }
+    li select {
+        font-size: 1.2rem;
+    }
+    li select option {
+        font-size: 1.2rem;
+    }
+    #toolsid li{
+        padding: 5px 13px;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+    }
+    #nav_1{
+        width: 95vw;
+    }
+    #uploadid li{
+        padding: 5px 15px;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+    }
+    #logo{
+        width: 30px;
+        height: 30px;
+    }
+    #down_logo{
+        width: 10px;
+        height: 10px;
+    }
+    #abtlink{
+        padding-left: 15px;
+    }
+
+
+}

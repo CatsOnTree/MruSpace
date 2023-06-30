@@ -1,0 +1,190 @@
+.mat-container{
+    width: 100vw;
+    min-height: 90vh;
+    max-height: auto;
+    background-color: var(--darkblack);
+    display: flex;
+}
+#mat-input{
+    width: 320px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border:2px solid var(--gray);
+    background-color: var(--darkblack);
+    color: var(--gray);
+    outline: none;
+}
+.mat-leftcon{
+    width: 28vw;
+    height: 70vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    border: 3px solid var(--gray);
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+
+
+#mat_programs_sidebar_h{
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mat-rightcon{
+    width: 72vw;
+    height: auto;
+    /* background-color: #f38787; */
+    /* border: 3px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.mat-rightcon-1{
+    width: 68vw;
+    height: 70vh;
+    /* border: 3px solid rgb(231, 192, 192); */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+    color: var(--white);
+}
+#matbtndesnam{
+    min-width: 300px;
+    max-width: auto;
+    /* height: 60px; */
+    border: 5px solid var(--orange);
+    font-size: 2rem;
+    /* padding: 5px 20px; */
+    border-radius: 10px;
+}
+.disflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.downloadimg{
+    width: 27px;
+    height: 27px;
+}
+.downloadbtn{
+    width: 60px;
+    height: 55px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.mat_rc_heading{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.matmobimaincon{
+    display: none;
+}
+.mat-rc-1-p{
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+    color:var(--gray)
+}
+.nav-escape-box-pmobi{
+    display: none;
+}
+.nav-escape-box-Pmoni{
+    display: block;
+    height: 11vh;
+    background-color: var(--darkblack);
+    width: 100vw;
+}
+
+
+@media only screen and (max-width: 600px){
+    .mat-leftcon{
+        display: none;
+    }
+    .mat-rightcon{
+        width: 95vw;
+        margin-top: 25px;
+    }
+    .mat-rightcon-1{
+        width: 100vw;
+        justify-content: center;
+    }
+    #matbtndesnam{
+        min-width: 200px;
+        max-width: auto;
+        /* height: 60px; */
+        border: 2px solid var(--orange);
+        font-size: 1.3rem;
+        /* padding: 5px 20px; */
+        border-radius: 10px;
+    }
+    .downloadimg{
+        width: 20px;
+        height: 20px;
+    }
+    .downloadbtn{
+        width: 45px;
+        height: 40px;
+        background-color: var(--orange);
+        border-radius: 10px;
+        border: none;
+        margin-left: 10px;
+    
+    }
+    .matmobimaincon{
+        /* background-color: #774343; */
+        background-color: var(--darkblack);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #matprgmmenubtn{
+        width: 200px;
+        height: 45px;
+        background-color: #fff;
+        border: none;
+        background-color: var(--orange);
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 5px;
+        border-radius: 2px;
+        color: var(--darkblack);
+    }
+    .mat-mobicon-2{
+        margin-top: 10px;
+    }
+    .nav-escape-box-Pmoni{
+        display: none;
+            }
+    .nav-escape-box-pmobi{
+        display: block;
+        height: 11vh;
+        background-color: var(--darkblack);
+        width: 100vw;
+    }
+
+}

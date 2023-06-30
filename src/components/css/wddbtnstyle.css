@@ -1,0 +1,58 @@
+.wdd_btn_cmcls{
+    width: 300px;
+    min-height: 80px;
+    border: none;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: var(--darkblack);
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 500;
+    padding: 1px 15px;
+    margin: 5px 10px;
+    box-sizing: border-box;
+    }
+    
+    .wdd_btn_cmcls:hover{
+        border:3px solid var(--orange);
+        color: var(--white);
+    }
+    .wdd_btn_cmcls:focus{
+        background-color: var(--orange);
+        color: var(--darkblack);
+    }
+    .wdd_lineunder_prgm{
+        width: 250px;
+        height: 2px;
+        background-color: var(--gray);
+        margin: 5px 50px;
+    }
+    .wddbtncon{
+        /* background-color: #c56363; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media only screen and (max-width: 700px){
+        .wdd_btn_cmcls{
+            width: 200px;
+            min-height: 45px;
+            border: none;
+            border-radius: 5px;
+            margin: 1px;
+            /* background-color: var(--darkblack); */
+            background-color: var(--orange);
+            color: var(--darkblack);
+            font-size: 25px;
+            font-weight: 450;
+            padding: 1px 10px;
+            margin: 2.5px 2px;
+            box-sizing: border-box;
+        }
+        .wdd_lineunder_prgm{
+            width: 150px;
+            
+        }
+
+    }

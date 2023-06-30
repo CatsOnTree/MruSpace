@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-3 {
+    width: 100vw;
+    height: auto;
+    /* border: 1px solid rgb(153, 152, 152); */
+    background-color: var(--darkblack);
+    box-sizing: border-box;
+  }
+  .con-3-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+    /* background-color: #fff; */
+    margin: 0px 0px 20px 0px;
+    padding-top: 100px;
+  }
+  .con-3-2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fff; */
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+  }
+  .con-3-2-1 {
+    width: 90vw;
+  }
+  #abtus {
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: var(--orange);
+    background-color: #3f301d;
+    padding: 1px 5px;
+    margin: 15px 1px;
+  }
+  #proname1 {
+    height: 60px;
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+  }
+  #prostat1 {
+    height: 60px;
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+  }
+  #profimg1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--green);
+    box-sizing: border-box;
+  }
+  .prof1des {
+    width: 75vw;
+    /* background-color: #fff; */
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--gray);
+    padding-top: 10px;
+    line-height: 55px;
+  }
+  .bracketimg {
+    width: 25px;
+    height: 25px;
+  }
+  .socialicon {
+    width: 45px;
+    height: 45px;
+  }
+  .altsocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+  }
+  .socialiconcon {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+  }
+  @media only screen and (max-width: 700px) {
+    
+    
+    .con-3-1 {
+        margin: 0px 0px 10px 0px;
+      }
+      .con-3-2 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #fff; */
+        justify-content: center;
+        align-items: center;
+        padding: 30px 40px;
+      }
+      .con-3-2-1 {
+        width: 90vw;
+      }
+      #abtus {
+        font-weight: 600;
+        font-size: 2.2rem;
+        color: var(--orange);
+        background-color: #3f301d;
+        padding: 1px 5px;
+        margin: 5px 1px;
+      }
+      #proname1 {
+        height: 40px;
+        font-size: 1.5rem;
+      }
+      #prostat1 {
+        height: 40px;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+      }
+      #profimg1 {
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--green);
+      }
+      .prof1des {
+        width: 90vw;
+        /* background-color: #fff; */
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--gray);
+        padding-top: 10px;
+        line-height: 35px;
+      }
+      .bracketimg {
+        width: 15px;
+        height: 15px;
+      }
+      .socialicon {
+        width: 35px;
+        height: 35px;
+      }
+      .altsocial {
+        padding: 20px 15px;
+      }
+      .socialiconcon {
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: flex-start; */
+      }
+
+
+
+
+  }

@@ -1,0 +1,20 @@
+
+.Qnsoaspg-con{
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Qnsoaspg-con p{
+    color: var(--orange);
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 400;
+}
+@media only screen and (max-width: 700px){
+
+    .Qnsoaspg-con p{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,14 @@
+  import { useNavigate } from "react-router-dom";
+  const navigate = useNavigate();
+
+  const goToProgramPage = () => {
+    navigate("/Program");
+    // alert("Clicked on Lets Code!")
+  };
+  const MaterialPage = () => {
+    // alert("clicked on lets refer!!")
+    navigate("/Materials");
+  };
+  const QnPaperPage = () => {
+    navigate("/QuestionPapers");
+  };

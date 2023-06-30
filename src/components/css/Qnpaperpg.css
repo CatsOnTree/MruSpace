@@ -1,0 +1,130 @@
+.Qn-container{
+    width: 100vw;
+    min-height: 90vh;
+    max-height: auto;
+    background-color: var(--darkblack);
+    display: flex;
+}
+#Qn-input{
+    width: 320px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border:2px solid var(--gray);
+    background-color: var(--darkblack);
+    color: var(--gray);
+}
+
+.Qn-leftcon{
+    width: 28vw;
+    height: 70vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    border: 3px solid var(--gray);
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+
+
+#Qn_programs_sidebar_h{
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Qn-rightcon{
+    width: 72vw;
+    height: auto;
+    /* background-color: #f38787; */
+    /* border: 3px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.disflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Qn_rc_heading{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.Qnmobimaincon{
+    display: none;
+}
+.nav-escape-box-pmobi{
+    display: none;
+}
+.nav-escape-box-Pmoni{
+    display: block;
+    height: 11vh;
+    background-color: var(--darkblack);
+    width: 100vw;
+}
+
+@media only screen and (max-width: 700px){
+    .Qn-leftcon{
+        display: none;
+    }
+    .Qn-rightcon{
+        width: 100vw;
+        margin-top: 25px;
+        align-items: flex-start;
+    }
+    .Qn-rightcon-1{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .Qnmobimaincon{
+        /* background-color: #774343; */
+        background-color: var(--darkblack);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #Qnprgmmenubtn{
+        width: 200px;
+        height: 45px;
+        background-color: #fff;
+        border: none;
+        background-color: var(--orange);
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 5px;
+        border-radius: 2px;
+        color: var(--darkblack);
+    }
+    .Qn-mobicon-2{
+        margin-top: 10px;
+    }
+    .nav-escape-box-Pmoni{
+        display: none;
+            }
+    .nav-escape-box-pmobi{
+        display: block;
+        height: 11vh;
+        background-color: var(--darkblack);
+        width: 100vw;
+    }
+    
+}
